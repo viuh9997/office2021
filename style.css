@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(to bottom right, #acb3b8, #273748);
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+* {
+	font-family: "Inter", sans-serif;
+}
+
+section {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translatex(-50%) translatey(-50%);
+	height: 450px;
+	width: 350px;
+	border-radius: 8px;
+	background: rgb(255, 255, 255, 0.3);
+	padding: 20px 30px;
+}
+
+p {
+	border-radius: 8px;
+	font-size: 12px;
+	padding: 8px 12px;
+	background: #ccc;
+	position: relative;
+}
+
+button {
+	cursor: pointer;
+	margin-top: 20px;
+	border-radius: 8px;
+	border: none;
+	width: 100%;
+	padding: 10px;
+	color: #fff;
+	background: #004e98;
+}
+
+span {
+	right: 15px;
+	bottom: 15px;
+}
+
+span:hover {
+	opacity: 1;
+}
+
+.gg-copy {
+	opacity: 0.5;
+	position: absolute;
+	cursor: pointer;
+	box-sizing: border-box;
+	display: block;
+	transform: scale(var(--ggs, 1));
+	width: 16px;
+	height: 18px;
+	border: 2px solid;
+	margin-left: -5px;
+	margin-top: -4px;
+}
+.gg-copy::after,
+.gg-copy::before {
+	content: "";
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+}
+.gg-copy::before {
+	background: linear-gradient(to left, currentColor 5px, transparent 0) no-repeat
+			right top/5px 2px,
+		linear-gradient(to left, currentColor 5px, transparent 0) no-repeat left
+			bottom/ 2px 5px;
+	box-shadow: inset -4px -4px 0 -2px;
+	bottom: -6px;
+	right: -6px;
+	width: 16px;
+	height: 18px;
+}
+.gg-copy::after {
+	width: 8px;
+	height: 2px;
+	background: currentColor;
+	left: 2px;
+	top: 2px;
+	box-shadow: 0 4px 0, 0 8px 0;
+}
+
+#me {
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 20px;
+	right: 30px;
+	opacity: 0.5;
+}
+
+#me:hover {
+	opacity: 1;
+	border-bottom: 2px solid #181818;
+	margin-bottom: -2px;
+}
